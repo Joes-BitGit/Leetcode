@@ -30,4 +30,3 @@ class Solution:
                 return 1
             else:
                 return (self.factorial(n-1)*n)
-                
