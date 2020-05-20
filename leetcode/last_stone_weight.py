@@ -10,7 +10,7 @@
 # At the end, there is at most 1 stone left.
 # Return the weight of this stone (or 0 if there are no stones left.)
 
-#EXAMPLE
+# EXAMPLE
 # Input: [2,7,4,1,8,1]
 # Output: 1
 # Explanation:
