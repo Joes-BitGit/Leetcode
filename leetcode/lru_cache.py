@@ -88,12 +88,16 @@ class LRUCache:
 
     def _add(self, node):
         '''adds to the end of the list'''
-        # takes the second to last node reference
+        # takes the last node reference
         prev_node = self.tail.prev
-        #
+        # instead of pointing to the tail now it points to the new node
         prev_node.next = node
+        # tail now points to the new node
         self.tail.prev = node
+        # connects the new node to the list
+        # prev to the previously last node
         node.prev = prev_node
+        # next to the tail ptr
         node.next = self.tail
 
 
