@@ -14,7 +14,7 @@ class Solution:
     def firstUniqChar(self, s: str) -> int:
         '''
         Time: O(N), only need to loop through the string twice
-        Space: O(N), depending on the input the size of the hashtable will grow
+        Space: O(1), the hashtable can't grow larger than 26 letters
         '''
         first_unique = {}
 
